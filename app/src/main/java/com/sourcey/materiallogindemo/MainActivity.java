@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.sourcey.materiallogindemo.login.LoginActivity;
+
 
 public class MainActivity extends ActionBarActivity {
 

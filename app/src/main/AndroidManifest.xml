@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.sourcey.materiallogindemo.LoginActivity" android:theme="@style/AppTheme.Dark" />
-        <activity android:name="com.sourcey.materiallogindemo.SignupActivity" android:theme="@style/AppTheme.Dark" />
+        <activity android:name=".login.LoginActivity" android:theme="@style/AppTheme.Dark" />
+        <activity android:name=".signup.SignupActivity" android:theme="@style/AppTheme.Dark" />
     </application>
 
 </manifest>
