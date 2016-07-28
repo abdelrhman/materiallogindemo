@@ -6,7 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.1.2'
-
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -16,4 +16,16 @@ allprojects {
     repositories {
         jcenter()
     }
+}
+
+ext{
+    compileSdkVersion = 24
+    buildToolsVersion = '24.0.0'
+    minSdkVersion = 15
+    targetSdkVersion = 22
+    junitVersion = 4.12
+    butterknifeVersion = '8.2.1'
+    supportLibraryVersion = '24.1.0'
+
+
 }
