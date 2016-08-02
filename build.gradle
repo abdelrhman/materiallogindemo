@@ -24,6 +24,9 @@ ext{
     minSdkVersion = 15
     targetSdkVersion = 22
     junitVersion = 4.12
+    mockitoVersion = '1.10.19'
+    hamcrestVersion = '1.3'
+    powerMockito = '1.6.2'
     butterknifeVersion = '8.2.1'
     supportLibraryVersion = '24.1.0'
 

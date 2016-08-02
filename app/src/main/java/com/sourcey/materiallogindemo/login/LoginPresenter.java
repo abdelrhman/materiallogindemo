@@ -1,8 +1,7 @@
 package com.sourcey.materiallogindemo.login;
 
 import com.sourcey.materiallogindemo.data.MyServiceRepository;
-
-import static  com.sourcey.materiallogindemo.util.ValidationUtils.*;
+import com.sourcey.materiallogindemo.util.ValidationUtils;
 
 /**
  * Created by talat on 29-07-2016.
@@ -46,14 +45,15 @@ public class LoginPresenter implements LoginContract.Presenter {
     }
 
     private boolean isValid(String email, String password) {
-        if(!isEmailValid(email)){
+        ValidationUtils validationUtils = new ValidationUtils();
+        if(!validationUtils.isEmailValid(email)){
             loginView.setEmailError("Enter a valid email");
             return false;
         }else{
             loginView.setEmailError(null);
         }
 
-        if(!isPasswordValid(password)){
+        if(!validationUtils.isPasswordValid(password)){
             loginView.setPasswordError("Enter a valid password");
             return false;
         }else{
