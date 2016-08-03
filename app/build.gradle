@@ -21,6 +21,7 @@ android {
         }
     }
 
+
     testOptions { // <-- You need this
         unitTests {
             returnDefaultValues = true
@@ -41,7 +42,9 @@ dependencies {
     testCompile "org.hamcrest:hamcrest-all:$rootProject.ext.hamcrestVersion"
     testCompile "org.powermock:powermock-module-junit4:$rootProject.ext.powerMockito"
     testCompile "org.powermock:powermock-api-mockito:$rootProject.ext.powerMockito"
-    testCompile 'org.assertj:assertj-core:2.5.0'
+    testCompile "org.assertj:assertj-core:1.7.1"
+
+
 
 
 }

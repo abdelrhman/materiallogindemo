@@ -9,8 +9,10 @@ public interface Validator {
 
     enum VALIDATION_RESULT{
         /**
-         * No error result.
+         * results.
          * */
+        MALFORMED_INPUT,
+        EMPTY_INPUT_FIELD,
         NO_ERROR
     }
 

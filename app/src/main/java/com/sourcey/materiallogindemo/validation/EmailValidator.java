@@ -7,8 +7,16 @@ import android.support.annotation.Nullable;
  */
 public class EmailValidator implements Validator {
 
+    EmailRegexMatcher emailPattern;
+    public EmailValidator(EmailRegexMatcher emailPattern) {
+        this.emailPattern = emailPattern;
+    }
+
     @Override
     public VALIDATION_RESULT validate(@Nullable String input) {
-        return null;
+        if(input == null || input.isEmpty()) return VALIDATION_RESULT.EMPTY_INPUT_FIELD;
+        if(!emailPattern.matches(input)) return VALIDATION_RESULT.MALFORMED_INPUT;
+        return VALIDATION_RESULT.NO_ERROR;
     }
+
 }
